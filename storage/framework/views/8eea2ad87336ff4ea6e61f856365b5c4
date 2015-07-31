@@ -1,0 +1,11 @@
+<div class="container col-md-6 col-md-offset-3"  >
+<?php if($errors-> any()): ?>
+
+    <ul class="alert alert-warning list-unstyled ">
+        <?php foreach($errors->all() as $error): ?>
+            <li><?php echo e($error); ?></li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
+</div>
+
